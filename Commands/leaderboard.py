@@ -8,7 +8,7 @@ class Leaderboard(commands.Cog):
 
     @commands.command()
     async def leaderboard(self,ctx):
-        url = "https://api.vtlog.net/v3/companies/11543/leaderboards/profit"
+        url = "https://api.vtlog.net/v3/companies/11915/leaderboards/profit"
         req = requests.get(url=url)
         json = req.json()
         u1 = json["response"][0]

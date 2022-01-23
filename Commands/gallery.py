@@ -8,7 +8,7 @@ class Gallery(commands.Cog):
 
     @commands.command()
     async def gallery(self,ctx):
-        urls = ["https://cdn.discordapp.com/attachments/903715176082202724/922553994583355492/ets2_20211220_211338_00.png","https://cdn.discordapp.com/attachments/921763147143053332/922572585986822235/ats_20211219_181530_00.png","https://cdn.discordapp.com/attachments/921763147143053332/922572620535320626/ats_20211219_183529_00.png","https://cdn.discordapp.com/attachments/921763147143053332/922572691603615744/ets2_20211219_141137_00.png","https://cdn.discordapp.com/attachments/921763147143053332/922572799720161280/ets2_20211214_155059_00.png"]
+        urls = ["https://cdn.discordapp.com/attachments/903715176082202724/922553994583355492/ets2_20211220_211338_00.png","https://cdn.discordapp.com/attachments/921763147143053332/922572585986822235/ats_20211219_181530_00.png","https://cdn.discordapp.com/attachments/921763147143053332/922572620535320626/ats_20211219_183529_00.png","https://cdn.discordapp.com/attachments/921763147143053332/922572691603615744/ets2_20211219_141137_00.png","https://cdn.discordapp.com/attachments/921763147143053332/922572799720161280/ets2_20211214_155059_00.png", "https://cdn.discordapp.com/attachments/903715176082202724/934742406207787008/270880_20220123172246_1.png", "https://cdn.discordapp.com/attachments/903715176082202724/934657283361734676/ats_20220122_225347_00.png", "https://cdn.discordapp.com/attachments/904347958173122571/934769920556826664/uwu.png"]
         embed1 = nextcord.Embed(colour=nextcord.Color.blurple())
         embed1.set_image(url=urls[0])
         embed1.set_author(name="Excell Express Photo Gallery",icon_url=ctx.guild.icon)
@@ -24,8 +24,17 @@ class Gallery(commands.Cog):
         embed5 = nextcord.Embed(colour=nextcord.Color.blurple())
         embed5.set_image(url=urls[4])
         embed5.set_author(name="Excell Express Photo Gallery",icon_url=ctx.guild.icon)
-        contents = [embed1, embed2, embed3,embed4, embed5]
-        pages = 5
+        embed6 = nextcord.Embed(colour=nextcord.Color.blurple())
+        embed6.set_image(url=urls[5])
+        embed6.set_author(name="Excell Express Photo Gallery",icon_url=ctx.guild.icon)
+        embed7 = nextcord.Embed(colour=nextcord.Color.blurple())
+        embed7.set_image(url=urls[6])
+        embed7.set_author(name="Excell Express Photo Gallery",icon_url=ctx.guild.icon)
+        embed8 = nextcord.Embed(colour=nextcord.Color.blurple())
+        embed8.set_image(url=urls[7])
+        embed8.set_author(name="Excell Express Photo Gallery",icon_url=ctx.guild.icon)
+        contents = [embed1, embed2, embed3,embed4, embed5, embed6, embed7, embed8]
+        pages = 8
         cur_page = 1
         message = await ctx.send(embed=embed1)
         # getting the message object for editing and reacting
