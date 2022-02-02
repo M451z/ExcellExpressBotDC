@@ -20,7 +20,7 @@ class Signature(commands.Cog):
     @commands.command(name="signature", help="Shows the driver information.")
     async def signature(self,ctx,steamID=None):
         drivers = ["76561198292480805", "76561198374248155", "76561198967414285", "76561198880376950", "76561199040156215", "76561198349129563"]
-        rookieDrivers = ["76561198967414285", "76561198880376950"]
+        rookieDrivers = ["76561198967414285", "76561198880376950", "76561198349129563"]
         if steamID is None:
             await ctx.reply("Provide a steam ID!")
         elif not steamID in drivers:
